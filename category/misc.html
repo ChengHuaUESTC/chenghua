@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
 
-        <title>skyearth - publishing</title>
+        <title>skyearth</title>
         <meta charset="utf-8" />
 
 
         <!-- Mobile viewport optimized: j.mp/bplateviewport -->
         <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
 
-        <link rel="stylesheet" type="text/css" href="/theme/gumby.css" />
-        <link rel="stylesheet" type="text/css" href="/theme/style.css" />
-        <link rel="stylesheet" type="text/css" href="/theme/pygment.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/gumby.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/style.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/pygment.css" />
 
-        <script src="/theme/js/libs/modernizr-2.6.2.min.js"></script>
+        <script src="../theme/js/libs/modernizr-2.6.2.min.js"></script>
 
 
 
@@ -28,21 +28,21 @@
         <div class="row">
 
           <header id="banner" class="body">
-                  <h1><a href="/">skyearth <strong></strong></a></h1>
+                  <h1><a href="../">skyearth <strong></strong></a></h1>
           </header><!-- /#banner -->
 
             <div id="navigation" class="navbar row">
               <a href="#" gumby-trigger="#navigation &gt; ul" class="toggle"><i class="icon-menu"></i></a>
              
               <ul class="columns">
-                <li><a href="/">Home</a></li>
+                <li><a href="../">Home</a></li>
 
 
               </ul>
             </div>
 
 <section id="content">
-
+<h2>Articles in the misc category</h2>
 
 
    <div class="row">
@@ -51,24 +51,51 @@
         <div class="eleven columns">
                  <ol id="post-list">
                         <li><article class="hentry">
-                                <header> <h2 class="entry-title"><a href="/my-super-post.html" rel="bookmark" title="Permalink to My super title">My super title</a></h2> </header>
+                                <header> <h2 class="entry-title"><a href="../nsqde-an-zhuang-yun-xing-yi-ji-bian-cheng-shi-jian.html" rel="bookmark" title="Permalink to NSQ的安装运行以及编程实践">NSQ的安装运行以及编程实践</a></h2> </header>
                                 <footer class="post-info">
-                                    <abbr class="published" title="2010-12-03T10:20:00+01:00"> Fri 03 December 2010 </abbr>
+                                    <abbr class="published" title="2016-01-05T00:00:00+01:00"> Tue 05 January 2016 </abbr>
                                     <address class="vcard author">By 
-                                    <a class="url fn" href="/author/alexis-metaireau.html"> Alexis Metaireau</a>
-                                    <a class="url fn" href="/author/conan-doyle.html"> Conan Doyle</a>
+                                    <a class="url fn" href="../author/vantigege.html"> vantigege</a>
                                     </address>
                                 </footer><!-- /.post-info -->
-                                <div class="entry-content"> <p>Short version for index and feeds</p> </div><!-- /.entry-content -->
+                                <div class="entry-content"> <h1>配置Golang环境</h1>
+<p>下载标准安装包</p>
+<div class="highlight"><pre>http://golang.org/mkdidl/
+</pre></div>
 
-                                <div class="medium primary btn"><a href="/my-super-post.html" rel="bookmark" title="Permalink to My super title">Read more <i class="icon-arrow-right"></i></a></div>
+
+<p><br /></p>
+<div class="highlight"><pre>解压到/usr/local目录sudo tar -xzvf go1.5.2.linux-amd64.tar.gz /usr/local
+</pre></div>
+
+
+<p><br /></p>
+<div class="highlight"><pre><span class="x">在</span><span class="p">$</span><span class="nv">HOME</span><span class="x">目录下创建文件夹gopath</span>
+</pre></div>
+
+
+<p><br /></p>
+<p>在~/.bashrc添加如下内容，并source .bashrc</p>
+<div class="highlight"><pre><span class="x">export GOPATH=</span><span class="p">$</span><span class="nv">HOME</span><span class="x">/gopath</span>
+<span class="x">export PATH=</span><span class="p">$</span><span class="nv">PATH</span><span class="x">:/usr/local/go/bin:</span><span class="p">$</span><span class="nv">GOPATH</span><span class="x">/bin</span>
+</pre></div>
+
+
+<p><br /></p>
+<h1>源码安装nsq</h1>
+<p>依次执行如下步骤</p>
+<div class="highlight"><pre>go get github.com/tools/godep
+go get github ...</pre></div> </div><!-- /.entry-content -->
+
+                                <div class="medium primary btn"><a href="../nsqde-an-zhuang-yun-xing-yi-ji-bian-cheng-shi-jian.html" rel="bookmark" title="Permalink to NSQ的安装运行以及编程实践">Read more <i class="icon-arrow-right"></i></a></div>
 
 
 
                                 <div class="row tag-row">
                                         <span>Tagged as : </span>
-                                            <a class="danger label" href="/tag/pelican.html">pelican</a>
-                                            <a class="danger label" href="/tag/publishing.html">publishing</a>
+                                            <a class="danger label" href="../tag/nsq.html">[nsq</a>
+                                            <a class="danger label" href="../tag/python.html">python</a>
+                                            <a class="danger label" href="../tag/go.html">go]</a>
                                 </div>
 
 
@@ -87,8 +114,8 @@
 
 <h4>Categories</h4>
 <ul class="blank">
-		<li><a href="/category/ji-zhu.html">技术</a></li>
-		<li><a href="/category/python.html">Python</a></li>
+		<li><a href="../category/misc.html">misc</a></li>
+		<li><a href="../category/python.html">Python</a></li>
 </ul>
 
 
@@ -156,8 +183,8 @@
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-  <script src="/theme/js/libs/jquery-1.9.1.min.js"></script>
-  <script src="/theme/js/libs/gumby.min.js"></script>
-  <script src="/theme/js/plugins.js"></script>
+  <script src="../theme/js/libs/jquery-1.9.1.min.js"></script>
+  <script src="../theme/js/libs/gumby.min.js"></script>
+  <script src="../theme/js/plugins.js"></script>
 </body>
 </html>
